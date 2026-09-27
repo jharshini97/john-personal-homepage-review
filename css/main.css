@@ -961,7 +961,8 @@ main > section {
 
   gap: var(--space-xs);
 
-  margin: auto 0 var(--space-lg);
+  margin-top: auto;
+  margin-bottom: var(--space-lg);
   padding: 0;
 
   list-style: none;
@@ -1427,4 +1428,108 @@ main > section {
     flex-direction: column;
     justify-content: center;
   }
+}
+
+/* ==========================================================
+   Interest Card Images
+========================================================== */
+
+.interest-card {
+  padding: 0;
+
+  overflow: hidden;
+}
+
+.interest-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+
+  object-fit: cover;
+}
+
+.interest-card-content {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-md);
+
+  padding: var(--space-lg);
+}
+
+.interest-card-content h3 {
+  margin-bottom: 0;
+}
+
+.interest-card-content p {
+  margin-bottom: 0;
+
+  color: var(--color-text-muted);
+}
+
+/* Slightly taller visual treatment on larger screens */
+
+@media (min-width: 900px) {
+  .interest-image {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+.project-card {
+  padding: 0;
+
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+
+  object-fit: cover;
+}
+
+.project-card h3,
+.project-card > p,
+.project-card .technology-tags,
+.project-card .project-links,
+.project-card .project-detail {
+  margin-left: var(--space-lg);
+  margin-right: var(--space-lg);
+}
+
+.project-card h3 {
+  margin-top: var(--space-lg);
+}
+
+.project-card .project-links {
+  margin-bottom: var(--space-lg);
+}
+
+@media (min-width: 960px) {
+  .project-image {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* ==========================================================
+   AI Hero Visual
+========================================================== */
+
+.ai-hero-visual {
+  margin-top: var(--space-2xl);
+
+  overflow: hidden;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-large);
+
+  box-shadow: var(--shadow-sm);
+}
+
+.ai-hero-visual img {
+  display: block;
+
+  width: 100%;
+  aspect-ratio: 16 / 9;
+
+  object-fit: cover;
 }
