@@ -148,11 +148,18 @@ personal-homepage/
 │   ├── interests/
 │   │   └── media/
 │   ├── profile/
-│   └── projects/
-├── docs/
-│   ├── design.md
-│   └── mockups/
-└── screenshots/
+│   ├── projects/
+│   └── screenshots/
+│       ├── personal-homepage/
+│       │   └── homepage.png
+│       └── w3-validator/
+│           ├── index-html.png
+│           ├── projects-html.png
+│           └── ai-html.png
+└── docs/
+    ├── ai-prompts.md
+    ├── design.md
+    └── mockups/
 ```
 
 ## Design Documentation
@@ -236,9 +243,9 @@ The final HTML pages were checked using the W3C Nu HTML Checker.
 
 Validated pages:
 
-- `index.html` — 0 errors, 0 warnings (./w3-validator/index.html.png)
-- `projects.html` — 0 errors, 0 warnings (./w3-validator/project.html.png)
-- `ai.html` — 0 errors, 0 warnings (./w3-validator/ai.html.png)
+- `index.html` — 0 errors, 0 warnings — [View W3C validation screenshot](./images/screenshots/w3-validator/index-html.png)
+- `projects.html` — 0 errors, 0 warnings — [View W3C validation screenshot](./images/screenshots/w3-validator/projects-html.png)
+- `ai.html` — 0 errors, 0 warnings — [View W3C validation screenshot](./images/screenshots/w3-validator/ai-html.png)
 
 The project also passes:
 
@@ -264,11 +271,11 @@ Accessibility considerations include:
 
 ## Screenshot
 
-A final screenshot of the deployed homepage will be added here after deployment.
+### Homepage
 
-<!--
-![The Personal Index homepage](./screenshots/homepage.png)
--->
+![The Personal Index homepage](./images/screenshots/personal-homepage/homepage.png)
+
+The screenshot above shows the current homepage implementation of **The Personal Index**.
 
 ## Generative AI Disclosure
 
@@ -317,9 +324,9 @@ elsewhere in the project:
 The page clearly identifies itself as AI-generated and includes an additional
 transparency section describing how the content was created and reviewed.
 
-### Prompt Log
+### AI Page Prompt Log and Chat Screenshots
 
-A detailed record of the prompts used during the project is available here:
+The prompts used to create and refine the required AI-generated page, together with screenshots from the ChatGPT conversation, are documented here:
 
 [`docs/ai-prompts.md`](./docs/ai-prompts.md)
 
