@@ -1730,33 +1730,6 @@ main > section {
   margin-bottom: var(--space-lg);
 }
 
-.travel-button {
-  min-height: 38px;
-
-  padding: 0.45rem 0.8rem;
-
-  background-color: var(--color-surface);
-  color: var(--color-text);
-
-  border: 1px solid var(--color-border);
-  border-radius: 999px;
-
-  font-size: var(--font-size-small);
-  font-weight: 600;
-}
-
-.travel-button:hover {
-  background-color: var(--color-accent-light);
-  border-color: var(--color-accent);
-}
-
-.travel-button.active {
-  background-color: var(--color-accent);
-  color: #ffffff;
-
-  border-color: var(--color-accent);
-}
-
 .travel-spotlight {
   padding-top: var(--space-md);
 
@@ -1874,33 +1847,6 @@ main > section {
   margin-top: var(--space-md);
 }
 
-.travel-button {
-  min-height: 38px;
-
-  padding: 0.45rem 0.75rem;
-
-  background-color: var(--color-surface);
-  color: var(--color-text);
-
-  border: 1px solid var(--color-border);
-  border-radius: 999px;
-
-  font-size: var(--font-size-small);
-  font-weight: 600;
-}
-
-.travel-button:hover {
-  background-color: var(--color-accent-light);
-  border-color: var(--color-accent);
-}
-
-.travel-button.active {
-  background-color: var(--color-accent);
-  color: #ffffff;
-
-  border-color: var(--color-accent);
-}
-
 .travel-spotlight {
   margin-top: var(--space-md);
   padding-top: var(--space-md);
@@ -1929,9 +1875,28 @@ main > section {
   display: flex;
   align-items: center;
 
+  min-height: 44px;
+
   gap: var(--space-sm);
+  padding: 0.45rem 0.75rem;
+
+  background-color: var(--color-surface);
+  color: var(--color-text);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-medium);
 
   text-align: left;
+}
+
+.travel-destination-button:hover {
+  background-color: var(--color-accent-light);
+  border-color: var(--color-accent);
+}
+
+.travel-destination-button.active {
+  background-color: var(--color-accent-light);
+  border-color: var(--color-accent);
 }
 
 .destination-flag {

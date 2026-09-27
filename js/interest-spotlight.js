@@ -218,7 +218,7 @@ function initInterestSpotlight() {
 }
 
 function initTravelDestinations() {
-  const travelButtons = document.querySelectorAll(".travel-button");
+  const travelButtons = document.querySelectorAll(".travel-destination-button");
   const travelSpotlight = document.querySelector("#travel-spotlight");
 
   if (!travelButtons.length || !travelSpotlight) {
