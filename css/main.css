@@ -413,15 +413,15 @@ main > section {
 }
 
 /* ==========================================================
-   Hero / Visual Section
+   About / Hero Section
 ========================================================== */
 
 .hero-section {
   display: grid;
-  gap: var(--space-xl);
+  gap: var(--space-2xl);
+
   align-items: center;
 
-  min-height: 520px;
   padding-block: var(--space-3xl);
 
   border-bottom: 1px solid var(--color-border);
@@ -437,23 +437,21 @@ main > section {
 }
 
 .hero-image img {
-  width: min(220px, 60vw);
-  aspect-ratio: 1;
+  width: min(100%, 420px);
+  aspect-ratio: 4 / 5;
 
   object-fit: cover;
+  object-position: center top;
 
-  background-color: var(--color-accent-light);
-
-  border: 1px solid var(--color-border);
-  border-radius: 50%;
+  border-radius: var(--border-radius-medium);
 }
 
 /* -------------------------
-     Hero Content
+     About Content
   ------------------------- */
 
 .hero-content {
-  max-width: 680px;
+  max-width: 720px;
 }
 
 .hero-content .eyebrow {
@@ -467,7 +465,7 @@ main > section {
 .hero-introduction {
   max-width: 62ch;
 
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-2xl);
 
   color: var(--color-text-muted);
 
@@ -476,27 +474,51 @@ main > section {
 }
 
 /* -------------------------
-     Hero Actions
+     About Details
   ------------------------- */
 
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
+.about-details {
+  display: grid;
+  gap: var(--space-lg);
 
-  gap: var(--space-sm);
+  margin-bottom: var(--space-2xl);
+}
+
+.about-detail {
+  padding-top: var(--space-lg);
+
+  border-top: 1px solid var(--color-border);
+}
+
+.about-detail h2 {
+  margin-bottom: var(--space-xs);
+
+  color: var(--color-accent);
+
+  font-size: var(--font-size-small);
+  font-weight: 700;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.about-detail p {
+  margin-bottom: 0;
+
+  color: var(--color-text-muted);
 }
 
 /* -------------------------
-     Desktop Hero Layout
+     Desktop Layout
   ------------------------- */
 
 @media (min-width: 768px) {
   .hero-section {
-    grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1.6fr);
+    grid-template-columns: minmax(280px, 0.85fr) minmax(0, 1.4fr);
 
-    gap: var(--space-3xl);
+    gap: clamp(2.5rem, 6vw, 5rem);
 
-    min-height: 600px;
+    align-items: center;
   }
 
   .hero-image {
@@ -504,7 +526,8 @@ main > section {
   }
 
   .hero-image img {
-    width: 260px;
+    width: 100%;
+    max-width: 400px;
   }
 }
 
@@ -512,95 +535,14 @@ main > section {
      Large Desktop
   ------------------------- */
 
-@media (min-width: 1024px) {
+@media (min-width: 1100px) {
   .hero-section {
-    grid-template-columns: 300px minmax(0, 1fr);
+    grid-template-columns: 380px minmax(0, 1fr);
   }
 
   .hero-image img {
-    width: 280px;
+    max-width: 380px;
   }
-}
-
-/* ==========================================================
-   Personal Index
-========================================================== */
-
-.personal-index {
-  border-bottom: 1px solid var(--color-border);
-}
-
-.personal-index h2 {
-  margin-bottom: var(--space-lg);
-
-  color: var(--color-text-muted);
-
-  font-size: var(--font-size-small);
-  font-weight: 700;
-
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-/* -------------------------
-     Index Tags
-  ------------------------- */
-
-.index-tags {
-  display: flex;
-  flex-wrap: wrap;
-
-  gap: var(--space-sm);
-
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-.index-tags li {
-  display: inline-flex;
-  align-items: center;
-
-  min-height: 40px;
-
-  padding: 0.55rem 0.9rem;
-
-  background-color: var(--color-surface);
-  color: var(--color-text);
-
-  border: 1px solid var(--color-border);
-  border-radius: 999px;
-
-  font-size: var(--font-size-small);
-  font-weight: 600;
-}
-
-/* -------------------------
-     Subtle Interaction
-  ------------------------- */
-
-.index-tags li {
-  transition:
-    border-color var(--transition-fast),
-    background-color var(--transition-fast),
-    transform var(--transition-fast);
-}
-
-.index-tags li:hover {
-  background-color: var(--color-accent-light);
-  border-color: var(--color-accent);
-
-  transform: translateY(-1px);
-}
-
-/* ==========================================================
-   About + Currently Bento Layout
-========================================================== */
-
-.about-currently-layout {
-  display: grid;
-  gap: var(--space-lg);
 }
 
 /* -------------------------
@@ -727,12 +669,16 @@ main > section {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   transition:
     transform var(--transition-normal),
     border-color var(--transition-normal),
     background-color var(--transition-normal);
+}
+
+.interest-card-content {
+  flex: 1;
 }
 
 .interest-card:hover {
@@ -753,6 +699,83 @@ main > section {
 }
 
 /* -------------------------
+   Interest Media Gallery
+------------------------- */
+
+.interest-media {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-lg);
+
+  border-top: 1px solid var(--color-border);
+}
+
+.interest-media[hidden] {
+  display: none;
+}
+
+.interest-media-label {
+  margin-bottom: var(--space-sm);
+
+  color: var(--color-text);
+
+  font-size: var(--font-size-small);
+  font-weight: 700;
+}
+
+.interest-media-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+.interest-media-card {
+  overflow: hidden;
+
+  background-color: var(--color-surface);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-medium);
+}
+
+.interest-media-card img {
+  display: block;
+
+  width: 100%;
+  aspect-ratio: 4 / 5;
+
+  object-fit: cover;
+}
+
+.interest-media-card-content {
+  padding: var(--space-sm);
+}
+
+.interest-media-card-content h4 {
+  margin-bottom: 0.25rem;
+
+  font-size: 1rem;
+}
+
+.interest-media-card-content p {
+  margin-bottom: 0;
+
+  color: var(--color-text-muted);
+
+  font-size: var(--font-size-small);
+}
+
+@media (min-width: 640px) {
+  .interest-media-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.interest-media-card.flag-card img {
+  object-fit: contain;
+  aspect-ratio: 3 / 2;
+  padding: var(--space-md);
+}
+
+/* -------------------------
      Tablet Layout
   ------------------------- */
 
@@ -770,84 +793,6 @@ main > section {
   .interest-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-}
-
-/* ==========================================================
-   Explore My Index
-========================================================== */
-
-.explore-section {
-  border-top: 1px solid var(--color-border);
-}
-
-.explore-section > h2 {
-  margin-bottom: var(--space-sm);
-}
-
-.explore-section > p:not(.section-label):not(.filter-status) {
-  max-width: 62ch;
-
-  margin-bottom: var(--space-lg);
-
-  color: var(--color-text-muted);
-}
-
-/* -------------------------
-     Filter Controls
-  ------------------------- */
-
-.filter-controls {
-  display: flex;
-  flex-wrap: wrap;
-
-  gap: var(--space-sm);
-}
-
-.filter-button {
-  padding: 0.55rem 1rem;
-
-  background-color: var(--color-surface);
-  color: var(--color-text);
-
-  border-color: var(--color-border);
-}
-
-.filter-button:hover {
-  background-color: var(--color-accent-light);
-  border-color: var(--color-accent);
-}
-
-.filter-button.active {
-  background-color: var(--color-accent);
-  color: #ffffff;
-
-  border-color: var(--color-accent);
-}
-
-.filter-button.active:hover {
-  background-color: var(--color-accent-dark);
-  border-color: var(--color-accent-dark);
-}
-
-/* -------------------------
-     Filter Status
-  ------------------------- */
-
-.filter-status {
-  margin-top: var(--space-md);
-  margin-bottom: 0;
-
-  color: var(--color-text-muted);
-
-  font-size: var(--font-size-small);
-}
-
-/* -------------------------
-     Filtered Cards
-  ------------------------- */
-
-.interest-card[hidden] {
-  display: none;
 }
 
 /* ==========================================================
@@ -1101,8 +1046,6 @@ main > section {
   flex-direction: column;
   align-items: flex-start;
 
-  max-width: 820px;
-
   padding-top: var(--space-3xl);
   padding-bottom: var(--space-3xl);
 
@@ -1114,7 +1057,8 @@ main > section {
 }
 
 .page-intro-text {
-  max-width: 62ch;
+  width: 100%;
+  max-width: none;
 
   margin-bottom: var(--space-xl);
 
@@ -1122,6 +1066,29 @@ main > section {
 
   font-size: var(--font-size-medium);
   line-height: 1.75;
+}
+
+/* ==========================================================
+   Projects Banner
+========================================================== */
+
+.projects-banner {
+  margin-top: var(--space-2xl);
+
+  overflow: hidden;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-large);
+}
+
+.projects-banner img {
+  display: block;
+
+  width: 100%;
+  aspect-ratio: 16 / 7;
+
+  object-fit: cover;
+  object-position: center;
 }
 
 /* -------------------------
@@ -1192,6 +1159,141 @@ main > section {
 }
 
 /* ==========================================================
+   From Audit to Technology
+========================================================== */
+
+.work-technology-section {
+  border-top: 1px solid var(--color-border);
+}
+
+.transition-intro {
+  width: 100%;
+  max-width: none;
+
+  margin-bottom: var(--space-2xl);
+}
+
+.transition-intro h2 {
+  margin-bottom: var(--space-lg);
+}
+
+.transition-intro > p:last-child {
+  margin-bottom: 0;
+
+  color: var(--color-text-muted);
+
+  font-size: var(--font-size-medium);
+  line-height: 1.75;
+}
+
+/* -------------------------
+     Transition Grid
+  ------------------------- */
+
+.transition-grid {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.transition-card,
+.transition-bridge-card {
+  min-height: 100%;
+
+  padding: var(--space-xl);
+}
+
+.transition-card-label {
+  margin-bottom: var(--space-sm);
+
+  color: var(--color-accent);
+
+  font-size: var(--font-size-small);
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.transition-card h3,
+.transition-bridge-card h3 {
+  margin-bottom: var(--space-lg);
+}
+
+.transition-card ul {
+  display: grid;
+  gap: var(--space-sm);
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.transition-card li {
+  padding-bottom: var(--space-sm);
+
+  color: var(--color-text-muted);
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.transition-card li:last-child {
+  padding-bottom: 0;
+
+  border-bottom: 0;
+}
+
+/* -------------------------
+     Bridge Card
+  ------------------------- */
+
+.transition-bridge-card {
+  background-color: var(--color-accent-light);
+
+  border-color: transparent;
+}
+
+.transition-bridge-card p:last-child {
+  max-width: 55ch;
+
+  margin-bottom: 0;
+
+  color: var(--color-text-muted);
+
+  font-size: var(--font-size-medium);
+  line-height: 1.7;
+}
+
+/* -------------------------
+     Desktop Layout
+  ------------------------- */
+
+@media (min-width: 900px) {
+  .transition-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .transition-bridge-card {
+    grid-column: 1 / -1;
+
+    display: grid;
+    grid-template-columns: minmax(180px, 0.35fr) minmax(0, 1fr);
+
+    column-gap: var(--space-2xl);
+    align-items: start;
+  }
+
+  .transition-bridge-card .transition-card-label {
+    grid-column: 1;
+  }
+
+  .transition-bridge-card h3,
+  .transition-bridge-card p:last-child {
+    grid-column: 2;
+  }
+}
+
+/* ==========================================================
    AI-Generated Page
 ========================================================== */
 
@@ -1216,7 +1318,8 @@ main > section {
 }
 
 .ai-intro-text {
-  max-width: 65ch;
+  width: 100%;
+  max-width: none;
 
   margin-bottom: 0;
 
@@ -1342,7 +1445,8 @@ main > section {
 }
 
 .ai-disclosure-card {
-  max-width: 850px;
+  width: 100%;
+  max-width: none;
 }
 
 .ai-disclosure-list {
@@ -1390,7 +1494,7 @@ main > section {
 
 @media (min-width: 640px) {
   .ai-connections-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
 
   .ai-disclosure-list > div {
@@ -1406,19 +1510,38 @@ main > section {
 
 @media (min-width: 960px) {
   .ai-connections-grid {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-columns: 1fr;
+  }
+
+  .ai-connection-card,
+  .ai-connection-card:nth-child(4),
+  .ai-connection-card:nth-child(5) {
+    grid-column: auto;
   }
 
   .ai-connection-card {
-    grid-column: span 2;
+    min-height: auto;
+
+    display: grid;
+    grid-template-columns:
+      60px
+      minmax(220px, 0.4fr)
+      minmax(0, 1fr);
+
+    gap: var(--space-xl);
+    align-items: start;
   }
 
-  .ai-connection-card:nth-child(4) {
-    grid-column: 2 / span 2;
+  .connection-number {
+    margin-bottom: 0;
   }
 
-  .ai-connection-card:nth-child(5) {
-    grid-column: 4 / span 2;
+  .ai-connection-card h3 {
+    margin-bottom: 0;
+  }
+
+  .ai-connection-card > p:last-child {
+    margin-bottom: 0;
   }
 
   .ai-intro {
@@ -1431,39 +1554,267 @@ main > section {
 }
 
 /* ==========================================================
-   Interest Card Images
+   Interests + Shared Spotlight
 ========================================================== */
 
-.interest-card {
+.interests-section {
+  border-top: 1px solid var(--color-border);
+}
+
+.interests-section > h2 {
+  margin-bottom: var(--space-sm);
+}
+
+.interests-intro {
+  max-width: 62ch;
+
+  margin-bottom: var(--space-2xl);
+
+  color: var(--color-text-muted);
+}
+
+/* -------------------------
+     Interest Selectors
+  ------------------------- */
+
+.interest-selectors {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: var(--space-sm);
+
+  margin-bottom: var(--space-xl);
+}
+
+.interest-selector {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  align-items: center;
+
+  min-height: 72px;
+
   padding: 0;
 
   overflow: hidden;
+
+  background-color: var(--color-surface);
+  color: var(--color-text);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-medium);
+
+  text-align: left;
 }
 
-.interest-image {
+.interest-selector img {
+  width: 72px;
+  height: 72px;
+
+  object-fit: cover;
+}
+
+.interest-selector span {
+  padding-inline: var(--space-md);
+
+  font-weight: 700;
+}
+
+.interest-selector:hover {
+  background-color: var(--color-accent-light);
+  border-color: var(--color-accent);
+}
+
+.interest-selector.active {
+  background-color: var(--color-accent-light);
+
+  border-color: var(--color-accent);
+
+  box-shadow: inset 4px 0 0 var(--color-accent);
+}
+
+/* -------------------------
+     Shared Spotlight
+  ------------------------- */
+
+.interest-spotlight {
+  display: grid;
+
+  overflow: hidden;
+
+  background-color: var(--color-surface);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-large);
+}
+
+.interest-spotlight-image {
+  overflow: hidden;
+}
+
+.interest-spotlight-image img {
+  display: block;
+
   width: 100%;
   aspect-ratio: 16 / 10;
 
   object-fit: cover;
 }
 
-.interest-card-content {
+.interest-spotlight-content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
-  gap: var(--space-md);
-
-  padding: var(--space-lg);
+  padding: var(--space-xl);
 }
 
-.interest-card-content h3 {
-  margin-bottom: 0;
+.spotlight-label {
+  margin-bottom: var(--space-sm);
+
+  color: var(--color-accent);
+
+  font-size: var(--font-size-small);
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
-.interest-card-content p {
+.interest-spotlight-content h3 {
+  margin-bottom: var(--space-md);
+
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+#spotlight-description {
+  max-width: 55ch;
+
   margin-bottom: 0;
 
   color: var(--color-text-muted);
+
+  font-size: var(--font-size-medium);
+  line-height: 1.7;
+}
+
+/* -------------------------
+     Travel Controls
+  ------------------------- */
+
+.travel-destinations {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-lg);
+
+  border-top: 1px solid var(--color-border);
+}
+
+.travel-destinations[hidden] {
+  display: none;
+}
+
+.travel-prompt {
+  margin-bottom: var(--space-sm);
+
+  color: var(--color-text);
+
+  font-size: var(--font-size-small);
+  font-weight: 700;
+}
+
+.travel-controls {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: var(--space-xs);
+
+  margin-bottom: var(--space-lg);
+}
+
+.travel-button {
+  min-height: 38px;
+
+  padding: 0.45rem 0.8rem;
+
+  background-color: var(--color-surface);
+  color: var(--color-text);
+
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+
+  font-size: var(--font-size-small);
+  font-weight: 600;
+}
+
+.travel-button:hover {
+  background-color: var(--color-accent-light);
+  border-color: var(--color-accent);
+}
+
+.travel-button.active {
+  background-color: var(--color-accent);
+  color: #ffffff;
+
+  border-color: var(--color-accent);
+}
+
+.travel-spotlight {
+  padding-top: var(--space-md);
+
+  border-top: 1px solid var(--color-border);
+}
+
+.travel-city {
+  margin-bottom: var(--space-xs);
+
+  color: var(--color-text);
+
+  font-weight: 700;
+}
+
+.travel-description {
+  max-width: 52ch;
+
+  margin-bottom: 0;
+
+  color: var(--color-text-muted);
+
+  font-size: var(--font-size-small);
+  line-height: 1.6;
+}
+
+/* -------------------------
+     Tablet
+  ------------------------- */
+
+@media (min-width: 640px) {
+  .interest-selectors {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* -------------------------
+     Desktop
+  ------------------------- */
+
+@media (min-width: 900px) {
+  .interest-selectors {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .interest-spotlight {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  }
+
+  .interest-spotlight-image img {
+    height: 100%;
+    min-height: 430px;
+
+    aspect-ratio: auto;
+  }
+
+  .interest-spotlight-content {
+    padding: var(--space-2xl);
+  }
 }
 
 /* Slightly taller visual treatment on larger screens */
@@ -1508,6 +1859,113 @@ main > section {
   .project-image {
     aspect-ratio: 16 / 9;
   }
+}
+
+/* ==========================================================
+   Travel Spotlight
+========================================================== */
+
+.travel-controls {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: var(--space-xs);
+
+  margin-top: var(--space-md);
+}
+
+.travel-button {
+  min-height: 38px;
+
+  padding: 0.45rem 0.75rem;
+
+  background-color: var(--color-surface);
+  color: var(--color-text);
+
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+
+  font-size: var(--font-size-small);
+  font-weight: 600;
+}
+
+.travel-button:hover {
+  background-color: var(--color-accent-light);
+  border-color: var(--color-accent);
+}
+
+.travel-button.active {
+  background-color: var(--color-accent);
+  color: #ffffff;
+
+  border-color: var(--color-accent);
+}
+
+.travel-spotlight {
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+
+  border-top: 1px solid var(--color-border);
+}
+
+.travel-city {
+  margin-bottom: var(--space-xs);
+
+  color: var(--color-text);
+
+  font-weight: 700;
+}
+
+.travel-description {
+  margin-bottom: 0;
+
+  color: var(--color-text-muted);
+
+  font-size: var(--font-size-small);
+  line-height: 1.6;
+}
+
+.travel-destination-button {
+  display: flex;
+  align-items: center;
+
+  gap: var(--space-sm);
+
+  text-align: left;
+}
+
+.destination-flag {
+  width: 48px;
+  height: 32px;
+
+  flex-shrink: 0;
+
+  object-fit: contain;
+
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+}
+
+.travel-destination-button span {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.1rem;
+}
+
+.travel-destination-button strong {
+  color: inherit;
+}
+
+.travel-destination-button small {
+  color: var(--color-text-muted);
+
+  font-size: var(--font-size-small);
+  font-weight: 500;
+}
+
+.travel-destination-button.active small {
+  color: inherit;
 }
 
 /* ==========================================================

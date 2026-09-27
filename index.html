@@ -26,9 +26,7 @@
     <!-- Accessibility shortcut -->
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <!-- ==================================================
-         HEADER
-    =================================================== -->
+    <!-- == HEADER === -->
     <header class="site-header">
       <nav class="main-nav" aria-label="Primary navigation">
         <a class="site-logo" href="./index.html">John Paintsil</a>
@@ -48,46 +46,20 @@
           </li>
 
           <li>
-            <a href="#interests">Interests</a>
-          </li>
-
-          <li>
-            <a href="#currently">Currently</a>
-          </li>
-
-          <li>
-            <a href="#work-technology">Work + Technology</a>
-          </li>
-
-          <li>
-            <a href="#projects">Projects</a>
+            <a href="./projects.html">Projects</a>
           </li>
 
           <li>
             <a href="./ai.html">AI Page</a>
           </li>
-
-          <li>
-            <a
-              href="https://github.com/jpaintsil-neu"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
-          </li>
         </ul>
       </nav>
     </header>
 
-    <!-- ==================================================
-         MAIN CONTENT
-    =================================================== -->
+    <!-- == MAIN CONTENT == -->
     <main id="main-content">
-      <!-- ==================================================
-           VISUAL / HERO SECTION
-      =================================================== -->
-      <section class="hero-section">
+      <!-- ABOUT / HERO SECTION -->
+      <section class="hero-section" id="about">
         <div class="hero-image">
           <img
             src="./images/profile/profile-photo.jpg"
@@ -96,333 +68,259 @@
         </div>
 
         <div class="hero-content">
-          <p class="eyebrow">The Personal Index</p>
+          <p class="eyebrow">About Me</p>
 
           <h1>John Paintsil</h1>
 
-          <p class="hero-introduction">
-            Ghanaian-born. Connecticut-raised. Auditor turned technologist.
-            Currently studying Information Technology and Computer Science while
-            exploring software, cybersecurity, and the things that keep me
-            curious.
-          </p>
-
-          <div class="hero-actions">
-            <a
-              class="button primary-button"
-              href="https://github.com/jpaintsil-neu"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Visit GitHub
-            </a>
-
-            <a class="button secondary-button" href="#contact"> Contact </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- ==================================================
-           PERSONAL INDEX SECTION
-      =================================================== -->
-      <section class="personal-index" aria-labelledby="personal-index-title">
-        <h2 id="personal-index-title">Personal Index</h2>
-
-        <ul class="index-tags">
-          <li>Ghana → Connecticut</li>
-          <li>10+ Years in Audit</li>
-          <li>IT + Computer Science</li>
-          <li>Runner-ish</li>
-          <li>Always Exploring</li>
-        </ul>
-      </section>
-
-      <!-- ==================================================
-           ABOUT / CURRENTLY SECTION
-      =================================================== -->
-      <div class="about-currently-layout">
-        <article class="about-card" id="about">
-          <p class="section-label">About</p>
-
-          <h2>A little about me</h2>
-
-          <div class="about-content">
-            <div class="about-block">
-              <h3>Where I Come From</h3>
+          <div class="about-details">
+            <div class="about-detail">
+              <h2>Background</h2>
 
               <p>
                 I was born in Ghana, West Africa, and moved to the United States
-                at the age of eight. I spent most of my life in Hartford County,
+                at age eight. I spent most of my life in Hartford County,
                 Connecticut.
               </p>
             </div>
 
-            <div class="about-block">
-              <h3>Where I Am Now</h3>
+            <div class="about-detail">
+              <h2>Professional Journey</h2>
 
               <p>
-                After building a career in accounting, internal audit, risk, and
-                controls, I am now pursuing Information Technology and Computer
-                Science at Northeastern University while expanding my work into
-                software and cybersecurity.
+                My professional background includes more than 10 years of
+                experience across accounting, internal audit, SOX compliance,
+                operational risk, financial controls, and public accounting.
+              </p>
+            </div>
+
+            <div class="about-detail">
+              <h2>Where I’m Going</h2>
+
+              <p>
+                I’m pursuing Information Technology and Computer Science at
+                Northeastern University while building practical experience in
+                web development, programming, cybersecurity, and automation.
               </p>
             </div>
           </div>
-        </article>
-
-        <aside class="currently-card" id="currently">
-          <p class="section-label">Currently</p>
-
-          <h2>What has my attention</h2>
-
-          <dl class="currently-list">
-            <div>
-              <dt>Reading</dt>
-              <dd>The Laws of Human Nature</dd>
-            </div>
-
-            <div>
-              <dt>Watching</dt>
-              <dd>Dark Matter</dd>
-            </div>
-
-            <div>
-              <dt>Learning</dt>
-              <dd>JavaScript and Web Development</dd>
-            </div>
-
-            <div>
-              <dt>Building</dt>
-              <dd>GitHub portfolio projects</dd>
-            </div>
-          </dl>
-        </aside>
-      </div>
-
-      <!-- ==================================================
-           FILTER CONTROLS SECTION
-      =================================================== -->
-      <section class="explore-section" aria-labelledby="explore-title">
-        <p class="section-label">Interactive</p>
-
-        <h2 id="explore-title">Explore My Index</h2>
-
-        <p>
-          Choose a category to focus on different parts of my interests,
-          background, and work.
-        </p>
-
-        <div
-          class="filter-controls"
-          role="group"
-          aria-label="Filter personal index"
-        >
-          <button class="filter-button active" type="button" data-filter="all">
-            Everything
-          </button>
-
-          <button class="filter-button" type="button" data-filter="personal">
-            Personal
-          </button>
-
-          <button class="filter-button" type="button" data-filter="culture">
-            Culture
-          </button>
-
-          <button class="filter-button" type="button" data-filter="technology">
-            Technology
-          </button>
-
-          <button class="filter-button" type="button" data-filter="career">
-            Career
-          </button>
-
-          <button class="filter-button" type="button" data-filter="media">
-            Media
-          </button>
         </div>
       </section>
 
       <!-- ==================================================
-           INTEREST CARDS SECTION
-      =================================================== -->
-      <section class="interests-section" id="interests">
+     INTEREST SPOTLIGHT
+=================================================== -->
+      <section
+        class="interests-section"
+        id="interests"
+        aria-labelledby="interests-title"
+      >
         <p class="section-label">Interests</p>
 
-        <h2>A few things about me</h2>
+        <h2 id="interests-title">A few things about me</h2>
 
-        <div class="interest-grid">
-          <article class="index-card interest-card" data-category="personal">
+        <div
+          class="interest-selectors"
+          role="group"
+          aria-label="Choose an interest"
+        >
+          <button
+            class="interest-selector active"
+            type="button"
+            data-interest="running"
+            aria-pressed="true"
+          >
             <img
-              class="interest-image"
+              src="./images/interests/running.jpg"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+            <span>Running</span>
+          </button>
+
+          <button
+            class="interest-selector"
+            type="button"
+            data-interest="music"
+            aria-pressed="false"
+          >
+            <img
+              src="./images/interests/music.jpg"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+            <span>Music</span>
+          </button>
+
+          <button
+            class="interest-selector"
+            type="button"
+            data-interest="reading"
+            aria-pressed="false"
+          >
+            <img
+              src="./images/interests/reading.jpg"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+            <span>Reading</span>
+          </button>
+
+          <button
+            class="interest-selector"
+            type="button"
+            data-interest="movies"
+            aria-pressed="false"
+          >
+            <img
+              src="./images/interests/movies.jpg"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+            <span>Movies + TV</span>
+          </button>
+
+          <button
+            class="interest-selector"
+            type="button"
+            data-interest="travel"
+            aria-pressed="false"
+          >
+            <img
+              src="./images/interests/travel.jpg"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+            <span>Travel</span>
+          </button>
+
+          <button
+            class="interest-selector"
+            type="button"
+            data-interest="technology"
+            aria-pressed="false"
+          >
+            <img
+              src="./images/interests/technology.jpg"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+            <span>Technology</span>
+          </button>
+        </div>
+
+        <article class="interest-spotlight" id="interest-spotlight">
+          <div class="interest-spotlight-image">
+            <img
+              id="spotlight-image"
               src="./images/interests/running.jpg"
               alt="Runner moving along an outdoor track"
-              loading="lazy"
-              decoding="async"
             />
+          </div>
 
-            <div class="interest-card-content">
-              <h3>Running</h3>
+          <div class="interest-spotlight-content" aria-live="polite">
+            <p class="spotlight-label">Currently Exploring</p>
 
-              <p>
-                Track and cross country introduced me to a sport I still have a
-                love-hate relationship with—and to the runner's high that keeps
-                bringing me back.
-              </p>
+            <h3 id="spotlight-title">Running</h3>
+
+            <p id="spotlight-description">
+              Track and cross country introduced me to a sport I still have a
+              love-hate relationship with and to the runner's high that keeps
+              bringing me back.
+            </p>
+            <div class="interest-media" id="interest-media" hidden>
+              <p class="interest-media-label">Featured Picks</p>
+
+              <div class="interest-media-grid" id="interest-media-grid">
+                <!-- JavaScript will populate this -->
+              </div>
             </div>
-          </article>
 
-          <article
-            class="index-card interest-card"
-            data-category="culture media"
-          >
-            <img
-              class="interest-image"
-              src="./images/interests/music.jpg"
-              alt="Vinyl records arranged beside a record player"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div class="interest-card-content">
-              <h3>Music</h3>
-
-              <p>
-                Michael Jackson, Lauryn Hill, and Nina Simone are among my
-                favorite artists.
+            <div class="travel-destinations" id="travel-destinations" hidden>
+              <p class="travel-prompt">
+                Places I’d especially like to explore:
               </p>
+
+              <div
+                class="travel-controls"
+                role="group"
+                aria-label="Choose a travel destination"
+              >
+                <button
+                  class="travel-destination-button active"
+                  type="button"
+                  data-destination="tokyo"
+                  aria-pressed="true"
+                >
+                  <img
+                    class="destination-flag"
+                    src="./images/interests/media/travel/japan.svg"
+                    alt=""
+                  />
+                  <span>
+                    <strong>Tokyo</strong>
+                    <small>Japan</small>
+                  </span>
+                </button>
+
+                <button
+                  class="travel-destination-button"
+                  type="button"
+                  data-destination="casablanca"
+                  aria-pressed="false"
+                >
+                  <img
+                    class="destination-flag"
+                    src="./images/interests/media/travel/morocco.svg"
+                    alt=""
+                  />
+                  <span>
+                    <strong>Casablanca</strong>
+                    <small>Morocco</small>
+                  </span>
+                </button>
+
+                <button
+                  class="travel-destination-button"
+                  type="button"
+                  data-destination="santiago"
+                  aria-pressed="false"
+                >
+                  <img
+                    class="destination-flag"
+                    src="./images/interests/media/travel/chile.svg"
+                    alt=""
+                  />
+                  <span>
+                    <strong>Santiago</strong>
+                    <small>Chile</small>
+                  </span>
+                </button>
+              </div>
+
+              <div
+                class="travel-spotlight"
+                id="travel-spotlight"
+                aria-live="polite"
+              >
+                <p class="travel-city">Tokyo, Japan</p>
+
+                <p class="travel-description">
+                  A destination that interests me for its mix of technology,
+                  design, history, food, and urban culture.
+                </p>
+              </div>
             </div>
-          </article>
-
-          <article
-            class="index-card interest-card"
-            data-category="culture media"
-          >
-            <img
-              class="interest-image"
-              src="./images/interests/reading.jpg"
-              alt="Open book resting on a desk"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div class="interest-card-content">
-              <h3>Reading</h3>
-
-              <p>
-                I enjoy Robert Greene's work as well as Alan Watts, particularly
-                The Way of Zen.
-              </p>
-            </div>
-          </article>
-
-          <article class="index-card interest-card" data-category="media">
-            <img
-              class="interest-image"
-              src="./images/interests/watching.jpg"
-              alt="Television remote control with a television in the background"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div class="interest-card-content">
-              <h3>Watching</h3>
-
-              <p>
-                Current favorites include Dark Matter, The Three-Body Problem,
-                and House of the Dragon.
-              </p>
-            </div>
-          </article>
-
-          <article class="index-card interest-card" data-category="media">
-            <img
-              class="interest-image"
-              src="./images/interests/movies.jpg"
-              alt="Cinema auditorium facing a large movie screen"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div class="interest-card-content">
-              <h3>Movies</h3>
-
-              <p>
-                Comedy and action are usually my first choices when I sit down
-                to watch a movie.
-              </p>
-            </div>
-          </article>
-
-          <article
-            class="index-card interest-card"
-            data-category="technology personal career"
-          >
-            <img
-              class="interest-image"
-              src="./images/interests/technology.jpg"
-              alt="Laptop displaying programming code in a workspace"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div class="interest-card-content">
-              <h3>Technology</h3>
-
-              <p>
-                I enjoy exploring coding, experimenting with new technical
-                ideas, and learning how software works.
-              </p>
-            </div>
-          </article>
-        </div>
-        <p class="filter-status" id="filter-status" aria-live="polite">
-          Showing all 6 interest items.
-        </p>
+          </div>
+        </article>
       </section>
 
-      <!-- ==================================================
-           WORK + TECHNOLOGY SECTION
-      =================================================== -->
-      <section class="work-technology-section" id="work-technology">
-        <p class="section-label">Work + Technology</p>
-
-        <h2>Two worlds I work in</h2>
-
-        <div class="work-technology-grid">
-          <article class="index-card experience-card" data-category="career">
-            <h3>Business, Risk + Controls</h3>
-
-            <ul>
-              <li>Internal Audit</li>
-              <li>SOX Compliance</li>
-              <li>Operational Risk</li>
-              <li>Financial Controls</li>
-              <li>Public Accounting</li>
-            </ul>
-          </article>
-
-          <article
-            class="index-card experience-card"
-            data-category="technology career"
-          >
-            <h3>Technology</h3>
-
-            <ul>
-              <li>Information Technology</li>
-              <li>Computer Science</li>
-              <li>Web Development</li>
-              <li>Cybersecurity</li>
-              <li>Programming</li>
-              <li>Automation</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <!-- ==================================================
-           PROJECT CARDS SECTION
-      =================================================== -->
+      <!-- == PROJECT CARDS SECTION === -->
       <section class="projects-section" id="projects">
         <p class="section-label">Projects</p>
 
@@ -551,9 +449,7 @@
       </section>
     </main>
 
-    <!-- ==================================================
-         FOOTER
-    =================================================== -->
+    <!-- == FOOTER == -->
     <footer class="site-footer" id="contact">
       <div class="footer-content">
         <p>© 2026 John Paintsil</p>

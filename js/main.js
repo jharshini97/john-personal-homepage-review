@@ -1,5 +1,5 @@
-import { initIndexFilter } from "./index-filter.js";
+import { initInterestSpotlight } from "./interest-spotlight.js";
 import { initNavigation } from "./navigation.js";
 
 initNavigation();
-initIndexFilter();
+initInterestSpotlight();
