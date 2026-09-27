@@ -757,25 +757,26 @@ personal-homepage/
 
 ## Design Mockups
 
-The design process includes desktop and mobile homepage mockups.
+The final design process includes four low-fidelity wireframes that document
+the completed website structure:
 
-The mockups should represent the final design direction, including:
+- Desktop homepage
+- Mobile homepage
+- Projects page
+- AI-generated page
+
+The mockups represent the final design direction, including:
 
 - Simplified primary navigation
 - About / hero section
 - Interactive Interest Spotlight
 - Featured Projects
+- Professional Context section
+- AI-generated Connections page
 - Footer
 - Responsive mobile stacking
 
-Because the implementation evolved during development, the final mockups will be updated to reflect the completed design rather than the earlier Personal Index, Currently, and Explore My Index concepts.
-
-Additional visual documentation should represent the final Projects page, including:
-
-- Turning Learning Into Practice
-- Project banner
-- From Audit to Technology
-- Selected Work
+The implementation evolved from earlier concepts during development. The final mockups therefore reflect the completed design rather than the earlier Personal Index, Currently, and Explore My Index concepts.
 
 ### Desktop Homepage Mockup
 

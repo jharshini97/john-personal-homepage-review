@@ -1,0 +1,330 @@
+# The Personal Index
+
+A responsive personal homepage created for **CS 5610: Web Development** at Northeastern University.
+
+The Personal Index presents my background, professional journey, personal interests, transition into Information Technology and Computer Science, and selected technical projects through a modern, interactive, and accessible front-end website.
+
+## Author
+
+**John Paintsil**
+
+- GitHub: [jpaintsil-neu](https://github.com/jpaintsil-neu)
+- Course: [CS 5610 — Web Development](https://johnguerra.co/classes/webDevelopment_online_fall_2026/)
+
+## Project Objective
+
+The goal of this project is to design and build a meaningful personal homepage using semantic HTML, modern CSS, and vanilla JavaScript.
+
+Rather than creating a traditional résumé-style website, The Personal Index organizes personal and professional information into distinct sections that visitors can explore.
+
+The project also demonstrates:
+
+- Responsive web design
+- Semantic HTML5
+- CSS Grid and Flexbox
+- ES6 JavaScript modules
+- Original JavaScript interactions
+- Accessible navigation and controls
+- W3C-compliant HTML
+- ESLint and Prettier integration
+- Git and GitHub workflow
+
+## Pages
+
+The website contains three primary pages:
+
+### Home — `index.html`
+
+The homepage introduces my personal and professional background and includes an interactive **Interest Spotlight**.
+
+Visitors can explore:
+
+- Running
+- Music
+- Reading
+- Movies + TV
+- Travel
+- Technology
+
+Selecting an interest dynamically changes the spotlight content and supporting media.
+
+The Travel category includes an additional destination selector for:
+
+- Tokyo, Japan
+- Casablanca, Morocco
+- Santiago, Chile
+
+### Projects — `projects.html`
+
+The Projects page focuses on the connection between my professional background and developing technical skills.
+
+It includes:
+
+- Turning Learning Into Practice
+- From Audit to Technology
+- Foundation — What I Bring
+- Growth — What I'm Building
+- Systems Thinking
+- Expanded project descriptions
+
+Featured projects include:
+
+- SecretTrace
+- Airbnb Listings
+- HTML, CSS & JavaScript Self-Assessment
+
+### AI Page — `ai.html`
+
+The required AI-generated page is titled **Connections in the Personal Index**.
+
+It explores five connections based on information already presented throughout the website:
+
+1. Audit → Cybersecurity
+2. Risk → Software Development
+3. Running → Persistence
+4. Reading → Perspective
+5. Curiosity → Building
+
+The page also contains a transparency section explaining how generative AI was used.
+
+## Original JavaScript Functionality
+
+The project contains original JavaScript implemented with ES6 modules.
+
+### Interest Spotlight
+
+Visitors can select an interest and dynamically update:
+
+- Main spotlight image
+- Title
+- Description
+- Selected-button state
+- Supporting media
+
+### Travel Destination Selector
+
+When Travel is selected, visitors can choose among Tokyo, Casablanca, and Santiago.
+
+The destination content updates dynamically while maintaining accessible button state through `aria-pressed`.
+
+### Responsive Navigation
+
+A JavaScript-controlled menu provides navigation on smaller screens using accessible state attributes including `aria-expanded` and `aria-controls`.
+
+## Technologies
+
+- HTML5
+- CSS3
+- JavaScript ES6+
+- ES6 Modules
+- CSS Grid
+- Flexbox
+- Git
+- GitHub
+- GitHub Pages
+- Node.js / npm
+- ESLint
+- Prettier
+
+## Project Structure
+
+```text
+personal-homepage/
+├── index.html
+├── projects.html
+├── ai.html
+├── README.md
+├── LICENSE
+├── package.json
+├── css/
+│   └── main.css
+├── js/
+│   ├── main.js
+│   ├── navigation.js
+│   └── interest-spotlight.js
+├── images/
+│   ├── ai/
+│   ├── icons/
+│   ├── interests/
+│   │   └── media/
+│   ├── profile/
+│   └── projects/
+├── docs/
+│   ├── design.md
+│   └── mockups/
+└── screenshots/
+```
+
+## Design Documentation
+
+The complete design documentation is available in:
+
+```text
+docs/design.md
+```
+
+It includes:
+
+- Project description
+- Design goals
+- Target audience
+- User personas
+- User stories
+- Information architecture
+- Responsive-design strategy
+- Accessibility strategy
+- Desktop and mobile wireframes
+- Projects page mockup
+- AI page mockup
+- Design evolution
+
+## Installation and Local Development
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/jpaintsil-neu/personal-homepage.git
+```
+
+### 2. Navigate to the Project
+
+```bash
+cd personal-homepage
+```
+
+### 3. Install Development Dependencies
+
+```bash
+npm install
+```
+
+### 4. Open the Website
+
+Because the project is a static front-end website, `index.html` can be opened directly in a browser.
+
+A local development server such as VS Code Live Server may also be used.
+
+## Code Quality
+
+### Run ESLint
+
+```bash
+npm run lint
+```
+
+### Automatically Fix Supported ESLint Issues
+
+```bash
+npm run lint:fix
+```
+
+### Format Files with Prettier
+
+```bash
+npm run format
+```
+
+### Verify Prettier Formatting
+
+```bash
+npm run format:check
+```
+
+## Validation
+
+The final HTML pages were checked using the W3C Nu HTML Checker.
+
+Validated pages:
+
+- `index.html` — 0 errors, 0 warnings (./w3-validator/index.html.png)
+- `projects.html` — 0 errors, 0 warnings (./w3-validator/project.html.png)
+- `ai.html` — 0 errors, 0 warnings (./w3-validator/ai.html.png)
+
+The project also passes:
+
+- ESLint
+- Prettier formatting checks
+
+## Accessibility
+
+Accessibility considerations include:
+
+- Semantic HTML5
+- Skip-to-content navigation
+- Keyboard-accessible controls
+- Visible focus states
+- Alternative text for meaningful images
+- Empty `alt` values for decorative images
+- Appropriate heading structure
+- `aria-expanded`
+- `aria-controls`
+- `aria-pressed`
+- Responsive layouts
+- Standard HTML buttons for interactive controls
+
+## Screenshot
+
+A final screenshot of the deployed homepage will be added here after deployment.
+
+<!--
+![The Personal Index homepage](./screenshots/homepage.png)
+-->
+
+## Generative AI Disclosure
+
+Generative AI was used during portions of the planning, design, development,
+debugging, validation, documentation, and creation of the required AI-generated
+page for this project.
+
+### Tool and Model
+
+- **Tool:** ChatGPT
+- **Model:** GPT-5.6 Sol
+- **Provider:** OpenAI
+
+### How Generative AI Was Used
+
+ChatGPT was used as an iterative development assistant for tasks including:
+
+- Reviewing the Project 1 requirements and rubric
+- Organizing page structure and information architecture
+- Reviewing HTML, CSS, and JavaScript
+- Suggesting accessibility and responsive-design improvements
+- Debugging JavaScript and CSS issues
+- Reviewing semantic HTML and accessibility
+- Assisting with Prettier, ESLint, and W3C validation
+- Developing the required AI-generated page
+- Refining design documentation and wireframes
+- Assisting with README documentation
+
+AI-generated suggestions were reviewed, modified, tested, and validated before
+being incorporated into the final project. 
+
+### AI-Generated Page
+
+The `ai.html` page was intentionally developed with generative AI to satisfy the
+Project 1 requirement for a third AI-generated page.
+
+The page explores five connections based only on information already provided
+elsewhere in the project:
+
+1. Audit → Cybersecurity
+2. Risk → Software Development
+3. Running → Persistence
+4. Reading → Perspective
+5. Curiosity → Building
+
+The page clearly identifies itself as AI-generated and includes an additional
+transparency section describing how the content was created and reviewed.
+
+### Prompt Log
+
+A detailed record of the prompts used during the project is available here:
+
+[`docs/ai-prompts.md`](./docs/ai-prompts.md)
+
+## License
+
+This project is licensed under the **MIT License**.
+
+See [`LICENSE`](./LICENSE) for details.
