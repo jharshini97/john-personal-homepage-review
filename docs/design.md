@@ -828,7 +828,7 @@ The implementation evolved from earlier concepts during development. The final m
 │ SecretTrace        Airbnb Listings       Web Assessment  │
 ├──────────────────────────────────────────────────────────┤
 │ FOOTER                                                   │
-│ GitHub | Email | Back to Top                            │
+│ GitHub | Email | Back to Top                             │
 └──────────────────────────────────────────────────────────┘
 ```
 
@@ -845,23 +845,23 @@ The implementation evolved from earlier concepts during development. The final m
 │ Introductory project/career-transition text              │
 │                                                          │
 │ ┌──────────────────────────────────────────────────────┐ │
-│ │                PROJECT BANNER IMAGE                 │ │
+│ │                PROJECT BANNER IMAGE                  │ │
 │ └──────────────────────────────────────────────────────┘ │
 ├──────────────────────────────────────────────────────────┤
 │ PROFESSIONAL CONTEXT                                     │
 │ From Audit to Technology                                 │
 │                                                          │
-│ ┌──────────────────────┐ ┌────────────────────────────┐ │
-│ │ FOUNDATION           │ │ GROWTH                     │ │
-│ │ What I Bring         │ │ What I'm Building          │ │
-│ └──────────────────────┘ └────────────────────────────┘ │
+│ ┌──────────────────────┐ ┌────────────────────────────┐  │
+│ │ FOUNDATION           │ │ GROWTH                     │  │
+│ │ What I Bring         │ │ What I'm Building          │  │
+│ └──────────────────────┘ └────────────────────────────┘  │
 │                                                          │
 │ ┌──────────────────────────────────────────────────────┐ │
-│ │ THE CONNECTION — SYSTEMS THINKING                  │ │
+│ │ THE CONNECTION — SYSTEMS THINKING                    │ │
 │ └──────────────────────────────────────────────────────┘ │
 ├──────────────────────────────────────────────────────────┤
 │ SELECTED WORK                                            │
-│ Featured Projects                                       │
+│ Featured Projects                                        │
 │                                                          │
 │ Project 1        Project 2        Project 3              │
 ├──────────────────────────────────────────────────────────┤
@@ -881,17 +881,17 @@ The implementation evolved from earlier concepts during development. The final m
 │ Connections in the Personal Index                        │
 │                                                          │
 │ ┌──────────────────────────────────────────────────────┐ │
-│ │             AI-GENERATED HERO VISUAL               │ │
+│ │             AI-GENERATED HERO VISUAL                 │ │
 │ └──────────────────────────────────────────────────────┘ │
 ├──────────────────────────────────────────────────────────┤
 │ AI INTERPRETATION                                        │
 │ Five Connections                                         │
 │                                                          │
 │ 01  Audit → Cybersecurity          Explanation           │
-│ 02  Risk → Software Development   Explanation           │
-│ 03  Running → Persistence         Explanation           │
-│ 04  Reading → Perspective         Explanation           │
-│ 05  Curiosity → Building          Explanation           │
+│ 02  Risk → Software Development   Explanation            │
+│ 03  Running → Persistence         Explanation            │
+│ 04  Reading → Perspective         Explanation            │
+│ 05  Curiosity → Building          Explanation            │
 ├──────────────────────────────────────────────────────────┤
 │ TRANSPARENCY                                             │
 │ How This Page Was Created                                │
