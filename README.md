@@ -285,12 +285,13 @@ The final Project 1 presentation is available here:
 
 - **PowerPoint presentation:** [John Paintsil — Personal Homepage](https://docs.google.com/presentation/d/1We2CNRAQTMShrE5W3-Aw0KLsz0AMLt6B/edit?usp=drivesdk)
 
-## Demo Video
+## Presentation and Demo Video
 
-A short narrated demonstration of the completed application will be published on my Bluesky account:
+The final Project 1 presentation and narrated demonstration are available here:
 
+- **Presentation Slides:** [John Paintsil — Personal Homepage Presentation](https://docs.google.com/presentation/d/1We2CNRAQTMShrE5W3-Aw0KLsz0AMLt6B/edit?usp=drivesdk)
 - **Bluesky:** [@jpaintsil.bsky.social](https://bsky.app/profile/jpaintsil.bsky.social)
-- **Video:** *Link will be added after recording and publication.*
+- **Narrated Demo Video:** [Watch the published Bluesky post](https://bsky.app/profile/jpaintsil.bsky.social/post/3mwmhjzuhqk2s)
 
 ## Generative AI Disclosure
 
