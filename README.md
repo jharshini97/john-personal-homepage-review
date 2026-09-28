@@ -279,17 +279,11 @@ Accessibility considerations include:
 
 The screenshot above shows the current homepage implementation of **The Personal Index**.
 
-## Presentation Slides
-
-The final Project 1 presentation is available here:
-
-- **PowerPoint presentation:** [John Paintsil — Personal Homepage](https://docs.google.com/presentation/d/1We2CNRAQTMShrE5W3-Aw0KLsz0AMLt6B/edit?usp=drivesdk)
-
 ## Presentation and Demo Video
 
 The final Project 1 presentation and narrated demonstration are available here:
 
-- **Presentation Slides:** [John Paintsil — Personal Homepage Presentation](https://docs.google.com/presentation/d/1We2CNRAQTMShrE5W3-Aw0KLsz0AMLt6B/edit?usp=drivesdk)
+- **PowerPoint Presentation:** [John Paintsil — Personal Homepage](https://docs.google.com/presentation/d/1We2CNRAQTMShrE5W3-Aw0KLsz0AMLt6B/edit?usp=drivesdk)
 - **Bluesky:** [@jpaintsil.bsky.social](https://bsky.app/profile/jpaintsil.bsky.social)
 - **Narrated Demo Video:** [Watch the published Bluesky post](https://bsky.app/profile/jpaintsil.bsky.social/post/3mwmhjzuhqk2s)
 
