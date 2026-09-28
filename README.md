@@ -279,6 +279,13 @@ Accessibility considerations include:
 
 The screenshot above shows the current homepage implementation of **The Personal Index**.
 
+## Demo Video
+
+A short narrated demonstration of the completed application will be published on my Bluesky account:
+
+- **Bluesky:** [@jpaintsil.bsky.social](https://bsky.app/profile/jpaintsil.bsky.social)
+- **Video:** *Link will be added after recording and publication.*
+
 ## Generative AI Disclosure
 
 Generative AI was used during portions of the planning, design, development,
