@@ -1,15 +1,17 @@
-# The Personal Index
+# Personal Homepage
 
 A responsive personal homepage created for **CS 5610: Web Development** at Northeastern University.
 
-The Personal Index presents my background, professional journey, personal interests, transition into Information Technology and Computer Science, and selected technical projects through a modern, interactive, and accessible front-end website.
+The Personal Homepage presents my background, professional journey, personal interests, transition into Information Technology and Computer Science, and selected technical projects through a modern, interactive, and accessible front-end website.
+
+- URL: [Live Site](https://jpaintsil-neu.github.io/personal-homepage/)
 
 ## Author
 
 **John Paintsil**
 
 - GitHub: [jpaintsil-neu](https://github.com/jpaintsil-neu)
-- Course: [CS 5610 — Web Development](https://johnguerra.co/classes/webDevelopment_online_fall_2026/)
+- Course Page: [CS 5610 — Web Development](https://johnguerra.co/classes/webDevelopment_online_fall_2026/)
 
 ## Project Objective
 
@@ -305,7 +307,7 @@ ChatGPT was used as an iterative development assistant for tasks including:
 - Assisting with README documentation
 
 AI-generated suggestions were reviewed, modified, tested, and validated before
-being incorporated into the final project. 
+being incorporated into the final project.
 
 ### AI-Generated Page
 
