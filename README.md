@@ -154,6 +154,7 @@ personal-homepage/
 │   └── screenshots/
 │       ├── personal-homepage/
 │       │   └── homepage.png
+│       │   └── thumbnail.png
 │       └── w3-validator/
 │           ├── index-html.png
 │           ├── projects-html.png
@@ -283,7 +284,6 @@ The screenshot above shows the current homepage implementation of **The Personal
 
 The final Project 1 presentation and narrated demonstration are available here:
 
-- **PowerPoint Presentation:** [John Paintsil — Personal Homepage](https://docs.google.com/presentation/d/1We2CNRAQTMShrE5W3-Aw0KLsz0AMLt6B/edit?usp=drivesdk)
 - **Google Slides Presentation:** [John Paintsil — Personal Homepage](https://docs.google.com/presentation/d/1LoFysUmaRWNKRHLY6jnE0tekepu4R69AboIgirU-Z68/edit?usp=drivesdk)
 - **Bluesky:** [@jpaintsil.bsky.social](https://bsky.app/profile/jpaintsil.bsky.social)
 - **Narrated Demo Video:** [Watch the published Bluesky post](https://bsky.app/profile/jpaintsil.bsky.social/post/3mwmhjzuhqk2s)
